@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <title>The Great Cremie Quiz</title>
+</head>
+<body>
+<div id="page">
+  <h1>The Great Cremie Quiz</h1>
+  <h2>3 questions abt Alcremie</h2>
+
+  <p>The sweets required to evolve Alcremie can be found in three battle cafés.</p>
+
+  <form name="question">
+    <p id="box">Name one of the cities where you can find a battle café.</p>
+    answer1 : <input type="text" name="answer">
+    <button type="button" onclick="validate()">Check</button>
+
+    <a href="question2.html">Question 2!</a>
+
+  </form>
+
+
+  <img src="motostoke.jpg" width="300" height="150" alt="motostoke">
+
+  <script>
+    function validate(){
+      var x = document.forms["question"]["answer"].value;
+      if (x === "Motostoke" || x === "Hammerlocke" || x === "Wyndon")
+      {
+        alert("Correct!")
+      } else if (x === "") {
+        document.getElementById("box").style.color = "red";
+      } else {
+          alert("Try again")
+        }
+
+    }
+  </script>
+</div>
+</body>
+</html>

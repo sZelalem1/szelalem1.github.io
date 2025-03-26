@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <title>The Great Cremie Quiz: Question 3</title>
+</head>
+<body>
+<div id="page">
+  <h2>Question 3</h2>
+
+  <p>Alcremie is a very recent pokémon, being introduced in gen 8 out of 9 (as of now).</p>
+
+  <form name="question">
+    <p id="box">What exactly is Alcremie's pokédex number?</p>
+    answer : <input type="text" name="answer">
+    <button type="button" onclick="validate()">Check answer</button>
+
+  </form>
+
+
+  <a href="register.html">Register your email (it doesnt rlly go towards anything)</a>
+  <script>
+
+    function validate() {
+      var ans = document.forms["question"]["answer"].value;
+      if (ans == "869") {
+        alert("Correct!") }
+      else if (x == "") {
+        document.getElementById("box").style.color = "red";
+      }
+    }
+
+
+  </script>
+
+</div>
+</body>
+</html>
